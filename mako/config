@@ -1,0 +1,11 @@
+border-radius=0
+border-size=3
+border-color=#253569
+background-color=#5f71a8
+text-color=#ffffff
+padding=10
+
+font=JetBrainsMono NF 12
+default-timeout=5000
+max-visible=3
+anchor=top-right

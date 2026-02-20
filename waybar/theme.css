@@ -1,0 +1,14 @@
+@define-color center-color      #13194f;
+@define-color nextto-color1     #3a3c87;
+@define-color nextto-color2     #474aa1;
+@define-color nextto-color3     #5a5cc2;
+@define-color text-main         #ffffff;
+@define-color unlocked          #8c7aba;
+@define-color button-normal     #777de6;
+@define-color button-active     #4cc093;
+@define-color button-urgent     #cc926e;
+@define-color button-second     #6cc2c7;
+@define-color hover-normal      #a19ef7;
+@define-color hover-active      #69d9ae;
+@define-color hover-urgent      #e3b08f;
+@define-color hover-second      #98e1e6;

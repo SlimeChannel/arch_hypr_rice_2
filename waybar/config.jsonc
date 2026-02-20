@@ -1,0 +1,193 @@
+// -*- mode: jsonc -*-
+{
+    "height": 40,
+    "spacing": 0,
+	"output": ["DP-2"],
+    "modules-left": [
+        "hyprland/workspaces",
+        "hyprland/window"
+    ],
+    "modules-center": [
+        "custom/left-out1",
+        "custom/logo",
+        "custom/right-out1"
+    ],
+    "modules-right": [
+        "custom/right-border",
+        "mpris",
+        "cava",
+        "pulseaudio",
+        "clock",
+        "tray",
+        "hyprland/language"
+    ],
+    "custom/logo": {
+        "format": "󰣇",
+        "tooltip": false
+    },
+    "custom/right-out1": {
+        "format": "",
+        "tooltip": false
+    },
+    "custom/left-out1": {
+        "format": "",
+        "tooltip": false
+    },
+    "custom/right-border": {
+        "format": "\u200b",
+        "tooltip": false
+    },
+    "cava": {
+        "sleep_timer": 15,
+        "framerate": 30,
+        "autosens": 1,
+        "sensitivity": 2,
+        "bars": 7,
+        "lower_cutoff_freq": 50,
+        "higher_cutoff_freq": 10000,
+        "hide_on_silence": true,
+        "method": "pulse",
+        "source": "auto",
+        "stereo": false,
+        "reverse": false,
+        "bar_delimiter": 0,
+        "monstercat": false,
+        "waves": false,
+        "noise_reduction": 0.77,
+        "input_delay": 2,
+        "format-icons": ["▁", "▂", "▃", "▄", "▅", "▆", "▇", "█"]
+    },
+    "mpris": {
+	    "format": "{player_icon}",
+	    "format-paused": "{status_icon}",
+    	"player-icons": {
+		    "default": ""
+    	},
+	    "status-icons": {
+		    "paused": ""
+        }
+    },
+    "hyprland/workspaces": {
+        "format": "{windows}",
+        "window-rewrite-default": "",
+        "window-rewrite": {
+            "class<vivaldi-stable>": "󰕷",
+            "class<code>": "󰨞",
+            "class<kitty>": "",
+            "class<net.nokyan.Resources>": "",
+            "class<org.telegram.desktop>": "",
+            "class<libreoffice-impress>": "",
+            "class<nekobox>": "󰖂",
+            "class<unityhub>": "",
+            "class<thunar>": "",
+            "class<GitHub Desktop>": "",
+            "class<steam>": "",
+            "class<obsidian>": "",
+            "class<YandexMusic>": "󰲸",
+            "class<com.github.alexkdeveloper.notepad>": "",
+            "class<krita>": "",
+            "class<Bosca Ceoil: The Blue Album>": "󰠃",
+            "class<firefox>": "",
+            "class<elecwhat>": "",
+            "class<Lorien>": "󰕙",
+            "class<cmake-gui>": "",
+            "class<libreoffice-calc>": "",
+            "class<Aseprite>": "",
+            "class<Audacious>": "󱝉",
+            "class<blender>": "",
+            "class<UXTerm>": "",
+            "class<Electron>": "",
+            "class<dosbox>": "󰧯",
+            "class<com.github.wwmm.easyeffects>": "󱡫",
+            "class<lstopo>": "",
+            "class<libreoffice-base>": "",
+            "class<libreoffice-draw>": "",
+            "class<libreoffice-math>": "",
+            "class<libreoffice-writer>": "",
+            "class<libreoffice-startcenter>": "",
+            "class<Kuro>": "",
+            "class<lximage-qt>": "",
+            "class<Modern CSV>": "",
+            "class<soundux>": "󰗅",
+            "class<vktablet>": "󱊞",
+            "class<Waveform>": "󱑽",
+            "class<qdbusviewer>": "",
+            "class<linguist>": "",
+            "class<qv4l2>": "",
+            "class<sun-tools-jconsole-JConsole>": "",
+            "class<com.obsproject.Studio>": "",
+            "class<VirtualBox Manager>": "󰜛",
+            "class<VirtualBox": "󰜛",
+            "class<qvidcap>": "",
+            "class<designer>": "",
+            "class<xgps>": "",
+            "class<xgpsspeed>": "",
+            "class<org.pulseaudio.pavucontrol>": "󰕾",
+            "class<blueman-manager>": "",
+            "class<nm-connection-editor>": "󰛳",
+            "class<engrampa>": "",
+            "class<bssh>": "",
+            "class<bvnc>": "",
+            "class<org.gnome.SimpleScan>": "󰘤",
+            "class<qt5ct>": "",
+            "class<qt6ct>": "",
+            "class<steam_proton>": "",
+            "class<dontstarve_steam_x64>": "",
+            "class<discord>": "",
+            "class<org.shotcut.Shotcut>": "󰩫",
+            "class<localsend>": "󰹻"
+        },
+        "persistent-workspaces": {
+            "*": 10
+        }
+    },
+    "hyprland/window": {
+        "icon": true,
+        "icon-size": 16,
+        "format": "{class}",
+        "min-length": 5,
+        "tooltip-format": "{title}"
+    },
+    "hyprland/language": {
+        "format-en": "🇺🇸 En",
+        "format-ru": "🇷🇺 Ru",
+        "on-click": "hyprctl switchxkblayout at-translated-set-2-keyboard next"
+    },
+    "tray": {
+        "spacing": 10
+    },
+    "clock": {
+        "format": "{:%H:%M}",
+        "tooltip-format": "<tt><big>{calendar}</big></tt>",
+        "calendar": {
+                    "mode"          : "month",
+                    "weeks-pos"     : "right",
+                    "format": {
+                              "days":       "<span color='#ecc6d9'><b>{}</b></span>",
+                              "weeks":      "<span color='#99ffdd'><b>W{}</b></span>",
+                              "weekdays":   "<span color='#ffcc66'><b>{}</b></span>",
+                              "today":      "<span color='#ff6699'><b><u>{}</u></b></span>"
+                              }
+                    }
+    },
+    "pulseaudio": {
+        "format": "{volume}% {icon} {format_source}",
+        "format-bluetooth": "{volume}% {icon} {format_source}",
+        "format-bluetooth-muted": " {icon} {format_source}",
+        "format-muted": " {format_source}",
+        "format-source": "{volume}% ",
+        "format-source-muted": "",
+        "format-icons": {
+            "headphone": "",
+            "hands-free": "",
+            "headset": "",
+            "phone": "",
+            "portable": "",
+            "car": "",
+            "default": ["", "", ""]
+        },
+        "on-click": "pavucontrol",
+        "tooltip": false
+    },
+	"reload_style_on_change": true
+}
